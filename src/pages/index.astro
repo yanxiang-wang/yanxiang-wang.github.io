@@ -1,0 +1,132 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import MyImage from "../../public/images/yanxiang.webp";
+import { Icon } from "astro-icon/components";
+import Skill from "../components/Skill.astro";
+import News from "../components/News.astro";
+import RecentPaper from "../components/RecentPaper.astro";
+---
+
+<Layout title="Yanxiang Wang | Homepage">
+  <div class="mx-auto max-w-screen-lg">
+    <div class="grid grid-cols-1 sm:grid-cols-5 justify-items-center">
+      <div class="col-span-1 sm:col-span-2">
+        <Image src={MyImage} alt="Yanxiang Wang" class="w-52 rounded mt-4" />
+      </div>
+      <div class="col-span-1 sm:col-span-3 mt-6 sm:mt-12 mx-2">
+        <h1 class="text-4xl font-bold">Yanxiang Wang</h1>
+        <div class="mt-4">
+          <p class="w-full text-xl">Ph.D. Candidate</p>
+          <p class="w-full text-xl">
+            <a
+              href="https://www.unsw.edu.au/engineering/our-schools/computer-science-and-engineering/"
+              class="link">School of Computer Science and Engineering</a
+            >
+          </p>
+          <p class="w-full text-xl">
+            <a href="https://www.unsw.edu.au/" class="link"
+              >University of New South Wales</a
+            >
+          </p>
+          <p class="w-full text-xl">
+            <span class="font-bold">Email</span>: yanxiang.wang [AT] unsw.edu.au
+          </p>
+          <div class="flex justify-start space-x-2">
+            <a
+              href="https://github.com/yanxiang-wang"
+              title="Github"
+              class="p-1"
+            >
+              <Icon name="mdi:github" class="w-8 h-8 hover:text-sky-500" />
+            </a>
+            <a
+              href="https://scholar.google.com.au/citations?user=v0iZQ2cAAAAJ&hl=en"
+              title="Google Scholar"
+              class="p-1"
+            >
+              <Icon
+                name="academicons:google-scholar-square"
+                class="w-8 h-8 hover:text-sky-500"
+              />
+            </a>
+            <a
+              href="https://orcid.org/0000-0002-1466-4006"
+              title="Orcid"
+              class="p-1"
+            >
+              <Icon
+                name="academicons:orcid"
+                class="w-8 h-8 hover:text-sky-500"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mx-2">
+      <div class="relative mt-2 pb-2">
+        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+      </div>
+      <div class="text-center text-2xl font-bold">
+        <a href="/publications" class="link">Publications</a>
+        <span class="mx-2">/</span>
+        <a href="/awards" class="link">Awards</a>
+        <span class="mx-2">/</span>
+        <a href="/teaching_service" class="link">Teaching & Services</a>
+        <span class="mx-2">/</span>
+        <a href="/misc" class="link">Misc</a>
+      </div>
+      <div class="relative mt-2">
+        <div class="absolute inset-0 flex items-center" aria-hidden="true">
+          <div class="w-full border-t border-gray-200"></div>
+        </div>
+      </div>
+
+      <div class="pt-2">
+        <p class="text-lg text-justify">
+          I am a Ph.D. candidate at the School of Computer Science and
+          Engineering,
+          <a href="https://www.unsw.edu.au/" class="link"
+            >University of New South Wales</a
+          > (UNSW), Australia. My research interests include mobile computing, machine
+          learning, and computer vision. I am supervised by Prof.
+          <a href="https://github.com/wenh77/Website/wiki" class="link"
+            >Wen Hu</a
+          >
+          and Prof.
+          <a href="https://www.cse.unsw.edu.au/~mahbub/" class="link"
+            >Mahbub Hassan</a
+          >. I also worked with Dr. <a
+            href="https://people.csiro.au/k/b/brano-kusy.aspx"
+            class="link"
+          >
+            Brano Kusy</a
+          > at <a
+            href="https://www.csiro.au/en/research/technology-space"
+            class="link">DATA61-CSIRO</a
+          >. Before joining UNSW, I received my M.Eng degree from the <a
+            href="https://english.hrbeu.edu.cn/"
+            class="link"
+            >Harbin Engineering University
+          </a>of China, in 2020 under the supervision of by Prof. <a
+            href="https://scholar.google.com.au/citations?user=793NrmoAAAAJ&hl=en"
+            class="link">Yiran Shen</a
+          >. I obtained my B.Sec degree from the <a
+            href="https://www.jlu.edu.cn/"
+            class="link">Jilin University</a
+          >, China, in 2015.
+        </p>
+      </div>
+      <News />
+      <RecentPaper />
+      <Skill />
+    </div>
+    <footer class="text-right mt-4">
+      <p class="text-base">Last update: September 2024</p>
+    </footer>
+  </div>
+</Layout>

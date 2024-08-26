@@ -1,0 +1,21 @@
+---
+interface Props {
+  abbr: string;
+  title: string;
+  fullname: string;
+}
+
+const { abbr, title, fullname } = Astro.props;
+---
+
+<div>
+  <div>
+    <span
+      class="inline-flex items-center rounded-md bg-green-100 px-2 text-sm font-medium text-green-700"
+      >{abbr}</span
+    >
+    {title}
+  </div>
+  <slot />
+  <p>{fullname}</p>
+</div>

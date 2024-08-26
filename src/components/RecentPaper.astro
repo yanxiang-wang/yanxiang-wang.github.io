@@ -1,0 +1,54 @@
+---
+import Paper from "./Paper.astro";
+---
+
+<div class="pt-2 w-full">
+  <p class="font-bold text-2xl">
+    Recent Publications: <span class="text-sm text-purple-800"
+      >( <a href="/publications" class="hover:underline hover:text-purple-500"
+        >Full list at the publication page</a
+      >
+      )</span
+    >
+  </p>
+  <ul class="list-disc ml-6 space-y-1">
+    <li class="w-full">
+      <Paper
+        abbr={"IPSN '24"}
+        title={"LiDARSpectra: Indoor Spectral Mapping with Low-cost LiDARs"}
+        fullname={"ACM/IEEE IPSN 2024"}
+      >
+        <p class="w-full">
+          Jiawei Hu, <span class="font-bold underline">Yanxiang Wang</span>,
+          Hong Jia, Cheng Jiang, Mahbub Hassan, Brano Kusy, Wen Hu
+        </p>
+      </Paper>
+    </li>
+    <li class="w-full">
+      <Paper
+        abbr={"IMWUT/UbiComp '23"}
+        title={"Iris: Passive Visible Light Positioning using Light Spectral Information"}
+        fullname={"ACM UbiComp 2023"}
+      >
+        <p class="w-full">
+          Jiawei Hu, <span class="font-bold underline">Yanxiang Wang</span>,
+          Hong Jia, Ashraf Uddin, Kusy, Brano, Moustafa Youssef, Mahbub Hassan,
+          Wen Hu
+        </p>
+      </Paper>
+    </li>
+    <li class="w-full">
+      <Paper
+        abbr={"IMWUT/UbiComp '23"}
+        title={"Spectral-Loc: Indoor Localization using Light Spectral Information"}
+        fullname={"ACM UbiComp 2023"}
+      >
+        <p class="author w-full">
+          <span class="font-bold underline">Yanxiang Wang</span>, Jiawei Hu,
+          Hong Jia, Ashraf Uddin, Kusy, Brano, Moustafa Youssef, Mahbub Hassan,
+          Wen Hu
+        </p>
+      </Paper>
+    </li>
+  </ul>
+</div>

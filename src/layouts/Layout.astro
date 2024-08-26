@@ -1,0 +1,34 @@
+---
+interface Props {
+  title: string;
+}
+import "../styles/global.css";
+const { title } = Astro.props;
+import "@fontsource/lato";
+import { SEO } from "astro-seo";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="shortcut icon" href="#" />
+    <SEO
+      title={title}
+      description="Yanxiang Wang is studying mobile computing, ubiquitous computing, and artificial intelligence. Explore his researches, publications, skills and etc."
+      canonical={Astro.url}
+    />
+  </head>
+  <body>
+    <slot />
+    <footer>
+      <script
+        defer
+        src="https://umami.462462.xyz/script.js"
+        data-website-id="dd9d778f-7601-46b1-bf0a-4a25a2c7dcb1"></script>
+    </footer>
+  </body>
+</html>

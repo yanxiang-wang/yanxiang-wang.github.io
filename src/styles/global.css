@@ -1,0 +1,41 @@
+/* The integration's default injected base.css file */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(45deg,
+            rgb(var(--accent)),
+            rgb(var(--accent-light)) 30%,
+            white 60%);
+}
+
+html {
+    @apply bg-white;
+    background-image: linear-gradient(to right,
+            rgba(0, 0, 0, 0.02) 1px,
+            transparent 1px),
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+    background-size: 7px 7px;
+}
+
+a.link {
+    @apply text-blue-600;
+    @apply hover:underline;
+    @apply font-semibold;
+}
+
+span.date {
+    @apply font-bold;
+}
+
+li {
+    @apply text-lg;
+}
+
+p {
+    @apply text-lg;
+}
