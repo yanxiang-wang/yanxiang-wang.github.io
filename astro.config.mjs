@@ -10,5 +10,5 @@ export default defineConfig({
 	image: {
 		service: passthroughImageService(),
 	},
-	site: 'https://yanxiangwang.pages.dev',
+	site: "https://yanxiang-wang.github.io",
 });
