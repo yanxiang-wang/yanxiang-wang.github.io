@@ -1,14 +1,30 @@
-import { defineConfig, passthroughImageService } from "astro/config";
+import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
-import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
+import tailwind from "@astrojs/tailwind";
 import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-	integrations: [mdx(), tailwind(), sitemap(), icon()],
-	image: {
-		service: passthroughImageService(),
+	integrations: [
+		mdx(),
+		sitemap({
+			filter: (page) => !page.includes("/vps"),
+		}),
+		tailwind(),
+		icon({
+			include: {
+				mdi: ["*"],
+				academicons: ["*"],
+			},
+		}),
+	],
+	markdown: {
+		syntaxHighlight: "shiki",
+		shikiConfig: {
+			theme: "catppuccin-mocha",
+			wrap: true,
+		},
 	},
 	site: "https://yanxiang-wang.github.io",
 });
