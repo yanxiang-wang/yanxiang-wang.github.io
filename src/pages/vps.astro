@@ -1,151 +1,61 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import { Code } from 'astro:components';
 import { SEO } from "astro-seo";
+
+// Import the markdown content
+const { Content } = await import('../content/vps-scripts.md');
 ---
 
 <Layout title="Yanxiang Wang | VPS Notes">
-  <SEO
-    slot="head"
-    noindex={true}
-    nofollow={true}
-  />
-  <div class="mx-auto max-w-screen-md mt-10">
-    <div class="mx-2">
-      <h1 class="font-bold text-4xl">VPS Testing Scripts</h1>
-
-      <h2 class="font-bold text-2xl mt-6">1. VPS System Check Scripts</h2>
-      <Code code={`# All-in-one test script
-bash <(wget -qO- --no-check-certificate https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh)
-wget -qO- bench.sh | bash
-wget -qO- benchy.pw | sh
-
-# GB6 benchmark with bandwidth test
-curl -sL yabs.sh | bash
-
-# GB6 benchmark without bandwidth test
-curl -sL yabs.sh | bash -s -- -i
-
-# GB5 benchmark with bandwidth test
-curl -sL yabs.sh | bash -5
-
-# GB5 benchmark without bandwidth test
-curl -sL yabs.sh | bash -s -- -i -5
-
-# GeekBench 5 single test
-bash <(curl -sL bash.icu/gb5)
-
-# Streaming media tests
-bash <(curl -L -s media.ispvps.com)
-bash <(curl -L -s check.unlock.media)
-curl -sL bench.monster | bash -s -- -asia
-
-# Disk I/O test
-dd if=/dev/zero of=256 bs=64K count=4K oflag=dsync`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">2. Route Tracing Script</h2>
-      <Code code="curl https://raw.githubusercontent.com/ludashi2020/backtrace/main/install.sh -sSf | sh" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">3. Docker Installation Script (Debian only)</h2>
-      <Code code={`apt install wget curl sudo vim git -y 
-curl -fsSL https://get.docker.com | bash -s docker`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">4. Node NVM Installation</h2>
-      <Code code={`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-nvm install 20
-node -v
-npm -v`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">5. Unlock Testing</h2>
-      <Code code={`bash <(curl -Ls https://cdn.jsdelivr.net/gh/missuo/OpenAI-Checker/openai.sh)
-bash <(curl -Ls unlock.icmp.ing/test.sh)
-bash <(curl -sL IP.Check.Place)`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">6. Comprehensive Toolbox</h2>
-      <Code code="wget -O box.sh https://raw.githubusercontent.com/BlueSkyXN/SKY-BOX/main/box.sh && chmod +x box.sh && clear && ./box.sh" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">7. Streaming Media Tests</h2>
-      <Code code={`bash <(curl -Ls unlock.icmp.ing/test.sh) -m 4
-bash <(curl -Ls unlock.icmp.ing/test.sh)
-bash <(curl -sL IP.Check.Place)`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">8. Oracle Root Password Modification</h2>
-      <Code code={`#!/bin/bash
-echo root:11235879 |sudo chpasswd root
-sudo sed -i 's/^#\?PermitRootLogin.*/PermitRootLogin yes/g' /etc/ssh/sshd_config;
-sudo sed -i 's/^#\?PasswordAuthentication.*/PasswordAuthentication yes/g' /etc/ssh/sshd_config;
-sudo service sshd restart`} lang="bash" theme="github-dark" />
-      <p class="mt-2">Default password: 11235879<br/>
-      Remember to change password after login using: <code>passwd</code></p>
-
-      <h2 class="font-bold text-2xl mt-6">9. Swap Script</h2>
-      <Code code="wget https://www.moerats.com/usr/shell/swap.sh && bash swap.sh" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">10. Oracle DD Debian11 Script</h2>
-      <Code code="bash <(wget --no-check-certificate -qO- 'https://moeclub.org/attachment/LinuxShell/InstallNET.sh') -d 11 -v 64 -a  -p custom_password" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">11. byte-unixbench Performance Test</h2>
-      <Code code={`git clone https://github.com/kdlucas/byte-unixbench.git
-cd UnixBench
-gcc --version
-apt update
-apt install build-essential
-make
-
-# Run tests:
-./Run
-# Show test options:
-./Run -h
-# Run specific test:
-./Run copy-file`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">12. PerformanceTest Linux</h2>
-      <Code code={`wget https://image.catcat.blog/pt_linux_x64
-sudo apt update
-sudo apt install libncurses5
-sudo ln -s /usr/lib/libncurses.so.6 /usr/lib/libncurses.so.5
-sudo ldconfig
-./pt_linux_x64`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">13. Multi-region Route Tracing</h2>
-      <Code code="wget -N --no-check-certificate https://raw.githubusercontent.com/Chennhaoo/Shell_Bash/master/AutoTrace.sh && chmod +x AutoTrace.sh && bash AutoTrace.sh" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">14. Hard Drive Power-on Time Check</h2>
-      <Code code="wget https://github.com/Aniverse/A/raw/i/a && bash a" lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">15. network-speed.xyz</h2>
-      <Code code={`# Available regions: na, sa, eu, asia, africa, au, middle-east, india, china, iran, indonesia
-curl -sL nws.sh | bash -s -- -r region_name`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">16. Warp Scripts</h2>
-      <Code code={`# Warp menu script
-wget -N https://gitlab.com/fscarmen/warp/-/raw/main/menu.sh && bash menu.sh
-# Warp-go script
-wget -N https://gitlab.com/fscarmen/warp/-/raw/main/warp-go.sh && bash warp-go.sh`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">17. SpeedTest Installation</h2>
-      <Code code={`sudo apt-get install curl
-curl -s https://packagecloud.io/install/repositories/ookla/speedtest-cli/script.deb.sh | sudo bash
-sudo apt-get install speedtest`} lang="bash" theme="github-dark" />
-
-      <h2 class="font-bold text-2xl mt-6">18. China-specific Scripts</h2>
-      <Code code={`# Change mirror source
-bash <(curl -sSL https://linuxmirrors.cn/main.sh)
-
-# Docker installation
-export DOWNLOAD_URL="https://mirrors.tuna.tsinghua.edu.cn/docker-ce"
-# Using curl
-curl -fsSL https://raw.githubusercontent.com/docker/docker-install/master/install.sh | sh
-# Using wget
-wget -O- https://raw.githubusercontent.com/docker/docker-install/master/install.sh | sh`} lang="bash" theme="github-dark" />
-    </div>
-  </div>
+      <SEO slot="head" noindex={true} nofollow={true} />
+      <main class="mx-auto max-w-screen-md mt-10 px-4 pb-10">
+            <article class="prose prose-lg dark:prose-invert max-w-none">
+                  <Content />
+            </article>
+      </main>
 </Layout>
 
-<style>
-  :global(pre) {
-    padding: 1rem !important;
-    border-radius: 0.5rem !important;
-    margin: 0 !important;
-  }
+<style is:global>
+      .prose pre {
+            margin: 0;
+            padding: 1rem;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            tab-size: 4;
+            white-space: pre;
+      }
+
+      .prose pre code {
+            white-space: pre;
+            word-wrap: normal;
+            display: inline-block;
+            min-width: 100%;
+      }
+
+      .prose code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.875rem;
+      }
+
+      .prose h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+      }
+
+      .prose p {
+            margin-top: 0.5rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+      }
+
+      /* Dark mode adjustments */
+      .dark .prose pre {
+            background-color: #111827;
+      }
 </style>
