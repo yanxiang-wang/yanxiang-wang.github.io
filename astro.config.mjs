@@ -1,4 +1,4 @@
-import { defineConfig } from "astro/config";
+import { defineConfig, passthroughImageService } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
 import tailwind from "@astrojs/tailwind";
@@ -20,6 +20,9 @@ export default defineConfig({
 			theme: "catppuccin-mocha",
 			wrap: true,
 		},
+	},
+	image: {
+		service: passthroughImageService(),
 	},
 	site: "https://yanxiang-wang.github.io",
 });
