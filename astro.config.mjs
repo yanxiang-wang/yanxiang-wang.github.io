@@ -12,12 +12,7 @@ export default defineConfig({
 			filter: (page) => !page.includes("/vps"),
 		}),
 		tailwind(),
-		icon({
-			include: {
-				mdi: ["*"],
-				academicons: ["*"],
-			},
-		}),
+		icon(),
 	],
 	markdown: {
 		syntaxHighlight: "shiki",

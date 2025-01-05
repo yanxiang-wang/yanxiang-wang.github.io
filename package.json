@@ -24,7 +24,7 @@
   "devDependencies": {
     "@iconify-json/academicons": "^1.1.14",
     "@iconify-json/mdi": "^1.1.64",
-    "astro-icon": "1.1.0",
+    "astro-icon": "1.1.5",
     "astro-seo": "^0.8.3"
   }
 }
