@@ -1,0 +1,115 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { SEO } from "astro-seo";
+
+// Import the markdown content
+const { Content } = await import("../content/rebuttal.md");
+---
+
+<Layout title="Yanxiang Wang | Academic Rebuttal Guide">
+      <SEO slot="head" noindex={true} nofollow={true} />
+      <main class="mx-auto max-w-4xl mt-10 px-6 pb-16">
+            <div
+                  class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-lg overflow-hidden"
+            >
+                  <!-- Header Section -->
+                  <div
+                        class="bg-gradient-to-r from-slate-800 to-slate-700 text-white px-8 py-12 text-center relative overflow-hidden"
+                  >
+                        <div class="absolute inset-0 bg-black/10"></div>
+                        <div class="relative z-10">
+                              <h1
+                                    class="text-4xl font-bold mb-3 tracking-tight"
+                              >
+                                    Academic Paper Rebuttal Guide
+                              </h1>
+                              <p class="text-slate-200 text-lg font-light">
+                                    Best practices for responding to peer review
+                              </p>
+                        </div>
+                        <!-- Decorative elements -->
+                        <div
+                              class="absolute top-4 right-4 w-24 h-24 bg-white/5 rounded-full"
+                        >
+                        </div>
+                        <div
+                              class="absolute bottom-6 left-6 w-16 h-16 bg-white/5 rounded-full"
+                        >
+                        </div>
+                  </div>
+
+                  <!-- Content Section -->
+                  <article
+                        class="prose prose-lg prose-slate max-w-none px-8 py-12"
+                  >
+                        <Content />
+                  </article>
+            </div>
+      </main>
+</Layout>
+
+<style>
+      /* Enhanced prose styling for markdown content */
+      article :global(h1) {
+            @apply text-3xl font-bold text-slate-800 mb-6 pb-3 border-b-2 border-blue-500;
+      }
+
+      article :global(h2) {
+            @apply text-2xl font-semibold text-slate-700 mt-8 mb-4 pb-2 border-b border-slate-300;
+      }
+
+      article :global(h3) {
+            @apply text-xl font-semibold text-slate-600 mt-6 mb-3;
+      }
+
+      article :global(p) {
+            @apply text-slate-600 leading-relaxed mb-4;
+      }
+
+      article :global(strong) {
+            @apply font-semibold text-slate-800 bg-yellow-100 px-1 py-0.5 rounded;
+      }
+
+      article :global(ul) {
+            @apply space-y-2 ml-6 list-disc;
+      }
+
+      /* Hide bullets for checklist items */
+      article :global(li:has(input[type="checkbox"])) {
+            @apply list-none;
+      }
+
+      article :global(li) {
+            @apply text-slate-600 leading-relaxed;
+      }
+
+      article :global(li::marker) {
+            @apply text-blue-500;
+      }
+
+      /* Special styling for sections that look like principles */
+      article :global(p:has(strong):not(:has(+ p))) {
+            @apply bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg my-4 shadow-sm;
+      }
+
+      /* Make blockquotes stand out */
+      article :global(blockquote) {
+            @apply border-l-4 border-indigo-500 bg-indigo-50 p-4 italic rounded-r-lg;
+      }
+
+      /* Style any code blocks */
+      article :global(code) {
+            @apply bg-slate-100 text-slate-800 px-2 py-1 rounded text-sm font-mono;
+      }
+
+      /* Responsive adjustments */
+      @media (max-width: 768px) {
+            article :global(h1) {
+                  @apply text-2xl;
+            }
+
+            article :global(h2) {
+                  @apply text-xl;
+            }
+      }
+</style>
