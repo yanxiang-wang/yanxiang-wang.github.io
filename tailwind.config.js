@@ -5,7 +5,7 @@ export default {
 	theme: {
 		extend: {
 			fontFamily: {
-				sans: ["Lato", ...defaultTheme.fontFamily.sans],
+				sans: ["Jost","Lato", ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
