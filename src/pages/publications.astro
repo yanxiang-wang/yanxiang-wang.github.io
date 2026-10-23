@@ -9,10 +9,6 @@ const years = [...new Set(publications.papers.map((paper) => paper.year))].sort(
   <main class="mx-auto max-w-screen-md my-10 px-4 sm:px-6">
     <a href="/" class="link">&larr; Home</a>
     <h1 class="font-bold text-4xl mt-4">Publications</h1>
-    <p class="mt-3 text-gray-600">
-      Publication records from <a href={publications.scholarUrl} class="link">Google Scholar</a>,
-      checked on <time datetime={publications.checkedAt}>October 23, 2026</time>.
-    </p>
     {years.map((year) => (
       <section class="mt-8" aria-labelledby={`publications-${year}`}>
         <h2 id={`publications-${year}`} class="font-bold text-2xl border-b border-gray-200 pb-2">{year}</h2>

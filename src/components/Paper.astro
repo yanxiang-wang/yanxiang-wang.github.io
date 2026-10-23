@@ -24,7 +24,7 @@ const { abbr, title, fullname, authors, url, preprint = false } = Astro.props;
   </div>
   <p>
     {authors.map((author, index) => (
-      <Fragment>{index > 0 && ", "}<span class:list={{ "font-bold underline": author === "Yanxiang Wang" }}>{author}</span></Fragment>
+      <Fragment>{index > 0 && ", "}<span class:list={{ "font-bold underline decoration-1 underline-offset-4 [text-decoration-skip-ink:none]": author === "Yanxiang Wang" }}>{author}</span></Fragment>
     ))}
   </p>
   <p>{fullname}</p>
