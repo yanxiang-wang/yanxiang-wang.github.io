@@ -1,0 +1,36 @@
+---
+interface Props {
+  title: string;
+}
+import "../styles/global.css";
+const { title } = Astro.props;
+import "@fontsource/lato";
+import "@fontsource/jost";
+
+import { SEO } from "astro-seo";
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <link rel="icon" type="image/png" href="/favicon.ico" />
+    <link rel="shortcut icon" href="#" />
+    <SEO
+      title={title}
+      description="Yanxiang Wang is an Associate Professor at Shandong University. His research interests include mobile computing, machine learning, and computer vision. Explore his research, publications, and academic activities."
+      canonical={Astro.url}
+    />
+  </head>
+  <body>
+    <slot />
+    <footer>
+      <script
+        src="https://track.xdiode.com/api/script.js"
+        data-site-id="1"
+        defer></script>
+    </footer>
+  </body>
+</html>

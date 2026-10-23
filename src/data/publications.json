@@ -1,0 +1,307 @@
+{
+  "scholarUrl": "https://scholar.google.com/citations?user=v0iZQ2cAAAAJ&hl=en",
+  "checkedAt": "2026-10-23",
+  "papers": [
+    {
+      "title": "Helios-CSK: Solar Cell-Based Decoding of Color-Coded Visible Light Communication",
+      "authors": [
+        "Yanxiang Wang",
+        "Yihe Yan",
+        "Jiawei Hu",
+        "Cheng Jiang",
+        "Mahbub Hassan",
+        "Ashraf Uddin",
+        "Brano Kusy",
+        "Weitao Xu",
+        "Wen Hu"
+      ],
+      "year": 2026,
+      "abbr": "IEEE IoTJ 2026",
+      "venue": "IEEE Internet of Things Journal",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11598891/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:8k81kl-MbHgC",
+      "preprint": false
+    },
+    {
+      "title": "SIGMA-ASL: Sensor-Integrated Multimodal Dataset for Sign Language Recognition",
+      "authors": [
+        "Xiaofang Xiao",
+        "Guangchao Li",
+        "Guangrong Zhao",
+        "Qi Lin",
+        "Wen Ma",
+        "Hongkai Wen",
+        "Yanxiang Wang",
+        "Yiran Shen"
+      ],
+      "year": 2026,
+      "abbr": "IMWUT/UbiComp 2026",
+      "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3810202",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:5nxA0vEk-isC",
+      "preprint": false
+    },
+    {
+      "title": "CARTS: Cooperative and Adaptive Resource Triggering and Stitching for 5G ISAC",
+      "authors": [
+        "Cheng Jiang",
+        "Yihe Yan",
+        "Yanxiang Wang",
+        "Jiawei Hu",
+        "Chun Tung Chou",
+        "Wen Hu"
+      ],
+      "year": 2026,
+      "abbr": "SenSys 2026",
+      "venue": "Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3774906.3800460",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:UebtZRa9Y70C",
+      "preprint": false
+    },
+    {
+      "title": "N²LoS: Single-Tag mmWave Backscatter for Robust Non-Line-of-Sight Localization",
+      "authors": [
+        "Zhenguo Shi",
+        "Yihe Yan",
+        "Yanxiang Wang",
+        "Wen Hu",
+        "Chun Tung Chou",
+        "Qingqing Cheng",
+        "Weijie Yuan"
+      ],
+      "year": 2025,
+      "abbr": "IEEE TMC 2025",
+      "venue": "IEEE Transactions on Mobile Computing",
+      "url": "https://ieeexplore.ieee.org/abstract/document/11258900/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:roLk4NBRz8UC",
+      "preprint": false
+    },
+    {
+      "title": "Poster: Single-tag NLoS mmWave Backscatter Localization",
+      "authors": [
+        "Zhenguo Shi",
+        "Yihe Yan",
+        "Yanxiang Wang",
+        "Wen Hu",
+        "Chun Tung Chou"
+      ],
+      "year": 2024,
+      "abbr": "SenSys · Poster 2024",
+      "venue": "Proceedings of the 22nd ACM Conference on Embedded Networked Sensor Systems",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3666025.3699388",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:Se3iqnhoufwC",
+      "preprint": false
+    },
+    {
+      "title": "Towards high-speed passive visible light communication with event cameras and digital micro-mirrors",
+      "authors": [
+        "Yanxiang Wang",
+        "Yiran Shen",
+        "Kenuo Xu",
+        "Mahbub Hassan",
+        "Guangrong Zhao",
+        "Chenren Xu",
+        "Wen Hu"
+      ],
+      "year": 2024,
+      "abbr": "SenSys 2024",
+      "venue": "Proceedings of the 22nd ACM Conference on Embedded Networked Sensor Systems",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3666025.3699368",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:ufrVoPGSRksC",
+      "preprint": false
+    },
+    {
+      "title": "PhD forum abstract: Advancing solar cells: Beyond energy harvesting to positioning and communication",
+      "authors": [
+        "Yanxiang Wang"
+      ],
+      "year": 2024,
+      "abbr": "IPSN · PhD Forum 2024",
+      "venue": "2024 23rd ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10577335/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:WF5omc3nYNoC",
+      "preprint": false
+    },
+    {
+      "title": "LiDARSpectra: Synthetic indoor spectral mapping with low-cost LiDARs",
+      "authors": [
+        "Jiawei Hu",
+        "Yanxiang Wang",
+        "Hong Jia",
+        "Cheng Jiang",
+        "Mahbub Hassan",
+        "Brano Kusy",
+        "Wen Hu"
+      ],
+      "year": 2024,
+      "abbr": "IPSN 2024",
+      "venue": "2024 23rd ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN)",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10577385/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:eQOLeE2rZwMC",
+      "preprint": false
+    },
+    {
+      "title": "VibMilk: Nonintrusive Milk Spoilage Detection via Smartphone Vibration",
+      "authors": [
+        "Yuezhong Wu",
+        "Wei Song",
+        "Yanxiang Wang",
+        "Dong Ma",
+        "Weitao Xu",
+        "Mahbub Hassan",
+        "Wen Hu"
+      ],
+      "year": 2024,
+      "abbr": "IEEE IoTJ 2024",
+      "venue": "IEEE Internet of Things Journal",
+      "url": "https://ieeexplore.ieee.org/abstract/document/10422771/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:YsMSGLbcyi4C",
+      "preprint": false
+    },
+    {
+      "title": "Iris: Passive visible light positioning using light spectral information",
+      "authors": [
+        "Jiawei Hu",
+        "Yanxiang Wang",
+        "Hong Jia",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Brano Kusy",
+        "Ashraf Uddin",
+        "Moustafa Youssef"
+      ],
+      "year": 2023,
+      "abbr": "IMWUT/UbiComp 2023",
+      "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3610913",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:W7OEmFMy1HYC",
+      "preprint": false
+    },
+    {
+      "title": "EV-DMD: a high-speed VLC system",
+      "authors": [
+        "Yanxiang Wang",
+        "Guangrong Zhao",
+        "Kenuo Xu",
+        "Yiran Shen",
+        "Chenren Xu",
+        "Mahbub Hassan",
+        "Wen Hu"
+      ],
+      "year": 2023,
+      "abbr": "SIGCOMM · Demo 2023",
+      "venue": "Proceedings of the ACM SIGCOMM 2023 Conference (Demo)",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3603269.3610861",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:Y0pCki6q_DkC",
+      "preprint": false
+    },
+    {
+      "title": "Spectral-Loc: Indoor localization using light spectral information",
+      "authors": [
+        "Yanxiang Wang",
+        "Jiawei Hu",
+        "Hong Jia",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Ashraf Uddin",
+        "Brano Kusy",
+        "Moustafa Youssef"
+      ],
+      "year": 2023,
+      "abbr": "IMWUT/UbiComp 2023",
+      "venue": "Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3580878",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:IjCSPb-OGe4C",
+      "preprint": false
+    },
+    {
+      "title": "Passive light spectral indoor localization",
+      "authors": [
+        "Jiawei Hu",
+        "Yanxiang Wang",
+        "Hong Jia",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Ashraf Uddin",
+        "Brano Kusy",
+        "Moustafa Youssef"
+      ],
+      "year": 2022,
+      "abbr": "MobiCom · Poster 2022",
+      "venue": "Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (Poster)",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3495243.3558253",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:Tyk-4Ss8FVUC",
+      "preprint": false
+    },
+    {
+      "title": "Indoor localization using light spectral information",
+      "authors": [
+        "Yanxiang Wang",
+        "Jiawei Hu",
+        "Hong Jia",
+        "Wen Hu",
+        "Mahbub Hassan",
+        "Ashraf Uddin",
+        "Brano Kusy",
+        "Moustafa Youssef"
+      ],
+      "year": 2022,
+      "abbr": "MobiCom · Poster 2022",
+      "venue": "Proceedings of the 28th Annual International Conference on Mobile Computing And Networking (Poster)",
+      "url": "https://dl.acm.org/doi/abs/10.1145/3495243.3558249",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:zYLM7Y9cAGgC",
+      "preprint": false
+    },
+    {
+      "title": "Event-stream representation for human gaits identification using deep neural networks",
+      "authors": [
+        "Yanxiang Wang",
+        "Xian Zhang",
+        "Yiran Shen",
+        "Bowen Du",
+        "Guangrong Zhao",
+        "Lizhen Cui",
+        "Hongkai Wen"
+      ],
+      "year": 2021,
+      "abbr": "IEEE TPAMI 2021",
+      "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9337225/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:2osOgNQ5qMEC",
+      "preprint": false
+    },
+    {
+      "title": "EV-gait: Event-based robust gait recognition using dynamic vision sensors",
+      "authors": [
+        "Yanxiang Wang",
+        "Bowen Du",
+        "Yiran Shen",
+        "Kai Wu",
+        "Guangrong Zhao",
+        "Jianguo Sun",
+        "Hongkai Wen"
+      ],
+      "year": 2019,
+      "abbr": "CVPR 2019",
+      "venue": "2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)",
+      "url": "https://ieeexplore.ieee.org/abstract/document/8953966/",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:u-x6o8ySG0sC",
+      "preprint": false
+    },
+    {
+      "title": "Indoor Interference Classification Based on WiFi Channel State Information",
+      "authors": [
+        "Zhuoshi Yang",
+        "Yanxiang Wang",
+        "Lejun Zhang",
+        "Yiran Shen"
+      ],
+      "year": 2018,
+      "abbr": "SpaCCS 2018",
+      "venue": "International Conference on Security, Privacy and Anonymity in Computation, Communication and Storage",
+      "url": "https://link.springer.com/chapter/10.1007/978-3-030-05345-1_11",
+      "scholarUrl": "https://scholar.google.com/citations?view_op=view_citation&hl=en&oe=ASCII&user=v0iZQ2cAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=v0iZQ2cAAAAJ:9yKSN-GCB0IC",
+      "preprint": false
+    }
+  ]
+}

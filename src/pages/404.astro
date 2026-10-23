@@ -1,0 +1,27 @@
+---
+import Layout from "../layouts/Layout.astro";
+const description = "404";
+---
+
+<Layout title={description}>
+  <div class="mt-32 mx-auto text-center">
+    <div class="">
+      <img
+        width="300"
+        height="259"
+        alt="Raccoon404Gif"
+        src="/404.webp"
+        class="mx-auto"
+      />
+    </div>
+    <h1 class="text-center mx-auto text-7xl">{description}</h1>
+    <br />
+    <p class="text-xl">It seems like you've wandered into the wrong forest!</p>
+    <br />
+    <p>
+      <a class="font-bold text-purple-400 text-4xl hover:text-sky-400" href="/"
+        >&larr; Home</a
+      >
+    </p>
+  </div>
+</Layout>

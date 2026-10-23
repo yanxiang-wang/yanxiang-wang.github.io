@@ -1,0 +1,63 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HomeLink from "../components/HomeLink.astro";
+import { SEO } from "astro-seo";
+
+// Import the markdown content
+const { Content } = await import('../content/vps-scripts.md');
+---
+
+<Layout title="Yanxiang Wang | VPS Notes">
+      <SEO slot="head" noindex={true} nofollow={true} />
+      <main class="mx-auto max-w-screen-md mt-10 px-4 pb-10">
+            <HomeLink />
+            <article class="prose prose-lg dark:prose-invert max-w-none">
+                  <Content />
+            </article>
+      </main>
+</Layout>
+
+<style is:global>
+      .prose pre {
+            margin: 0;
+            padding: 1rem;
+            background-color: #1f2937;
+            color: white;
+            border-radius: 0.5rem;
+            overflow-x: auto;
+            font-size: 0.875rem;
+            line-height: 1.5;
+            tab-size: 4;
+            white-space: pre;
+      }
+
+      .prose pre code {
+            white-space: pre;
+            word-wrap: normal;
+            display: inline-block;
+            min-width: 100%;
+      }
+
+      .prose code {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-size: 0.875rem;
+      }
+
+      .prose h2 {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+      }
+
+      .prose p {
+            margin-top: 0.5rem;
+            color: #6b7280;
+            font-size: 0.875rem;
+      }
+
+      /* Dark mode adjustments */
+      .dark .prose pre {
+            background-color: #111827;
+      }
+</style>
