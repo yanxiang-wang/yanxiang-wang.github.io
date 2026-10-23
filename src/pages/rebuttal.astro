@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HomeLink from "../components/HomeLink.astro";
 import { SEO } from "astro-seo";
 
 // Import the markdown content
@@ -9,6 +10,7 @@ const { Content } = await import("../content/rebuttal.md");
 <Layout title="Yanxiang Wang | Academic Rebuttal Guide">
       <SEO slot="head" noindex={true} nofollow={true} />
       <main class="mx-auto max-w-4xl mt-10 px-6 pb-16">
+            <HomeLink />
             <div
                   class="bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl shadow-lg overflow-hidden"
             >

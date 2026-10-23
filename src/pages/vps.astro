@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import HomeLink from "../components/HomeLink.astro";
 import { SEO } from "astro-seo";
 
 // Import the markdown content
@@ -9,6 +10,7 @@ const { Content } = await import('../content/vps-scripts.md');
 <Layout title="Yanxiang Wang | VPS Notes">
       <SEO slot="head" noindex={true} nofollow={true} />
       <main class="mx-auto max-w-screen-md mt-10 px-4 pb-10">
+            <HomeLink />
             <article class="prose prose-lg dark:prose-invert max-w-none">
                   <Content />
             </article>
