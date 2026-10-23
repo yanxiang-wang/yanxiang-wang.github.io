@@ -3,19 +3,29 @@ interface Props {
   abbr: string;
   title: string;
   fullname: string;
+  authors: string[];
+  url?: string;
+  preprint?: boolean;
 }
 
-const { abbr, title, fullname } = Astro.props;
+const { abbr, title, fullname, authors, url, preprint = false } = Astro.props;
 ---
 
 <div>
   <div>
     <span
-      class="inline-flex items-center rounded-md bg-green-100 px-2 text-sm font-medium text-green-700"
+      class:list={[
+        "inline-flex items-center rounded-md px-2 text-sm font-medium",
+        preprint ? "bg-purple-100 text-purple-800" : "bg-green-100 text-green-700",
+      ]}
       >{abbr}</span
     >
-    {title}
+    {url ? <a href={url} class="link">{title}</a> : title}
   </div>
-  <slot />
+  <p>
+    {authors.map((author, index) => (
+      <Fragment>{index > 0 && ", "}<span class:list={{ "font-bold underline": author === "Yanxiang Wang" }}>{author}</span></Fragment>
+    ))}
+  </p>
   <p>{fullname}</p>
 </div>

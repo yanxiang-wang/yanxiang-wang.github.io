@@ -38,7 +38,7 @@ import RecentPaper from "../components/RecentPaper.astro";
               <Icon name="mdi:github" class="w-7 h-7 hover:text-sky-500" />
             </a>
             <a
-              href="https://scholar.google.com.au/citations?user=v0iZQ2cAAAAJ&hl=en"
+              href="https://scholar.google.com/citations?user=v0iZQ2cAAAAJ&hl=en"
               title="Google Scholar"
               class="p-1"
             >
@@ -71,11 +71,7 @@ import RecentPaper from "../components/RecentPaper.astro";
       <div class="text-center text-2xl font-bold">
         <a href="/publications" class="link">Publications</a>
         <span class="mx-2">/</span>
-        <a href="/awards" class="link">Awards</a>
-        <span class="mx-2">/</span>
-        <a href="/teaching_service" class="link">Teaching & Services</a>
-        <span class="mx-2">/</span>
-        <a href="/misc" class="link">Misc</a>
+        <a href="https://scholar.google.com/citations?user=v0iZQ2cAAAAJ&hl=en" class="link">Google Scholar</a>
       </div>
       <div class="relative mt-2">
         <div class="absolute inset-0 flex items-center" aria-hidden="true">
@@ -88,7 +84,15 @@ import RecentPaper from "../components/RecentPaper.astro";
           I am an Associate Professor at
           <a href="https://www.sdu.edu.cn/" class="link">Shandong University</a>,
           China. My research interests include mobile computing, machine learning,
-          and computer vision. Previously, I conducted my doctoral research at the
+          and computer vision.
+        </p>
+      </div>
+      <RecentPaper />
+      <details class="mt-8 border-t border-gray-200 pt-4">
+        <summary class="cursor-pointer text-lg font-bold">Academic background &amp; activities</summary>
+        <div class="pt-3">
+          <p class="text-lg text-justify">
+          Previously, I conducted my doctoral research at the
           School of Computer Science and Engineering,
           <a href="https://www.unsw.edu.au/" class="link"
             >University of New South Wales</a
@@ -111,18 +115,23 @@ import RecentPaper from "../components/RecentPaper.astro";
             href="https://english.hrbeu.edu.cn/"
             class="link"
             >Harbin Engineering University
-          </a>of China, in 2020 under the supervision of by Prof. <a
+          </a>in China, in 2020 under the supervision of Prof. <a
             href="https://scholar.google.com.au/citations?user=793NrmoAAAAJ&hl=en"
             class="link">Yiran Shen</a
           >. I obtained my B.Sec degree from the <a
             href="https://www.jlu.edu.cn/"
             class="link">Jilin University</a
           >, China, in 2015.
-        </p>
-      </div>
-      <News />
-      <RecentPaper />
-      <Skill />
+          </p>
+          <nav aria-label="Academic background" class="flex flex-wrap gap-x-6 gap-y-2 mt-4">
+            <a href="/awards" class="link">Awards</a>
+            <a href="/teaching_service" class="link">Teaching &amp; Services</a>
+            <a href="/misc" class="link">Misc</a>
+          </nav>
+          <News />
+          <Skill />
+        </div>
+      </details>
     </div>
     <footer class="text-right mt-4">
       <div class="w-full mx-auto">
