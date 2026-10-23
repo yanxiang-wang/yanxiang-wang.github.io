@@ -9,7 +9,7 @@ import RecentPaper from "../components/RecentPaper.astro";
 ---
 
 <Layout title="Yanxiang Wang | Homepage">
-  <div class="mx-auto max-w-screen-lg px-4 sm:px-6 lg:px-8">
+  <div class="mx-auto max-w-screen-lg px-4 py-6 sm:px-6 sm:py-10 lg:px-8">
     <div
       class="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-8"
     >
@@ -63,24 +63,18 @@ import RecentPaper from "../components/RecentPaper.astro";
     </div>
 
     <div class="mx-2">
-      <div class="relative mt-2 pb-2">
-        <div class="absolute inset-0 flex items-center" aria-hidden="true">
-          <div class="w-full border-t border-gray-200"></div>
-        </div>
-      </div>
-      <div class="text-center text-2xl font-bold">
-        <a href="/publications" class="link">Publications</a>
-        <span class="mx-2">/</span>
-        <a href="https://scholar.google.com/citations?user=v0iZQ2cAAAAJ&hl=en" class="link">Google Scholar</a>
-      </div>
-      <div class="relative mt-2">
-        <div class="absolute inset-0 flex items-center" aria-hidden="true">
-          <div class="w-full border-t border-gray-200"></div>
-        </div>
-      </div>
+      <nav aria-label="Main navigation" class="my-6 border-y border-gray-200 py-3">
+        <ul class="flex flex-wrap items-center justify-center gap-x-2 gap-y-1 sm:gap-x-4">
+          <li><a href="/publications" class="menu-link">Publications</a></li>
+          <li><a href="/awards" class="menu-link">Awards</a></li>
+          <li><a href="/teaching_service" class="menu-link">Teaching &amp; Services</a></li>
+          <li><a href="/misc" class="menu-link">Misc</a></li>
+          <li><a href="https://scholar.google.com/citations?user=v0iZQ2cAAAAJ&hl=en" class="menu-link">Google Scholar</a></li>
+        </ul>
+      </nav>
 
       <div class="pt-2">
-        <p class="text-lg text-justify">
+        <p class="text-lg leading-relaxed">
           I am an Associate Professor at
           <a href="https://www.sdu.edu.cn/" class="link">Shandong University</a>,
           China. My research interests include mobile computing, machine learning,
@@ -103,31 +97,18 @@ import RecentPaper from "../components/RecentPaper.astro";
           and Prof.
           <a href="https://www.cse.unsw.edu.au/~mahbub/" class="link"
             >Mahbub Hassan</a
-          >. I also worked with Dr. <a
-            href="https://people.csiro.au/k/b/brano-kusy.aspx"
-            class="link"
-          >
-            Brano Kusy</a
-          > at <a
+          >. I also worked at <a
             href="https://www.csiro.au/en/research/technology-space"
             class="link">DATA61-CSIRO</a
-          >. Before joining UNSW, I received my M.Eng degree from the <a
+          >. Before joining UNSW, I received my M.Eng degree from <a
             href="https://english.hrbeu.edu.cn/"
             class="link"
             >Harbin Engineering University
-          </a>in China, in 2020 under the supervision of Prof. <a
-            href="https://scholar.google.com.au/citations?user=793NrmoAAAAJ&hl=en"
-            class="link">Yiran Shen</a
-          >. I obtained my B.Sec degree from the <a
+          </a>in China, in 2020. I obtained my B.Sec degree from <a
             href="https://www.jlu.edu.cn/"
             class="link">Jilin University</a
           >, China, in 2015.
           </p>
-          <nav aria-label="Academic background" class="flex flex-wrap gap-x-6 gap-y-2 mt-4">
-            <a href="/awards" class="link">Awards</a>
-            <a href="/teaching_service" class="link">Teaching &amp; Services</a>
-            <a href="/misc" class="link">Misc</a>
-          </nav>
           <News />
           <Skill />
         </div>
@@ -150,3 +131,9 @@ import RecentPaper from "../components/RecentPaper.astro";
     </footer>
   </div>
 </Layout>
+
+<style>
+  .menu-link {
+    @apply inline-flex min-h-11 items-center whitespace-nowrap rounded-md px-3 py-2 text-base font-semibold text-blue-600 transition-colors hover:bg-blue-50 hover:text-blue-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600 sm:text-lg;
+  }
+</style>
