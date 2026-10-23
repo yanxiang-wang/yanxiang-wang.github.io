@@ -1,38 +1,47 @@
-<div>
-  <p class="font-bold text-2xl pt-2">News & Activities:</p>
-  <ul class="list-disc ml-6">
+---
+import { papers } from "../data/publications.json";
+
+const highlights = [
+  {
+    title: "Helios-CSK",
+    description: "Our work on solar cell-based visible light communication appears in IEEE Internet of Things Journal.",
+  },
+  {
+    title: "SIGMA-ASL",
+    description: "Our multimodal dataset for sign language recognition appears in ACM IMWUT.",
+  },
+  {
+    title: "CARTS",
+    description: "Our work on resource triggering and stitching for 5G integrated sensing and communication appears in SenSys 2026.",
+  },
+  {
+    title: "N²LoS",
+    description: "Our work on non-line-of-sight localization using mmWave backscatter appears in IEEE Transactions on Mobile Computing.",
+  },
+].map((highlight) => ({
+  ...highlight,
+  paper: papers.find((paper) => paper.title.startsWith(`${highlight.title}:`))!,
+}));
+---
+
+<section aria-labelledby="news-heading">
+  <h2 id="news-heading" class="font-bold text-2xl pt-2">News &amp; Activities</h2>
+  <ul class="mt-3 list-disc ml-6 space-y-3 leading-relaxed">
     <li>
-      <span class="date">[2024.10.15]</span> Our work on high-speed passive VLC was
-      accepted by <a href="https://sensys.acm.org/2024/" class="link">
-        SenSys 2024
-      </a>.
+      <span class="font-semibold">[Current]</span> I am an Associate Professor at
+      <a href="https://www.sdu.edu.cn/" class="link">Shandong University</a>,
+      working on mobile computing, machine learning, and computer vision.
     </li>
+    {highlights.map(({ title, description, paper }) => (
+      <li>
+        <span class="font-semibold">[{paper.year}]</span>{" "}
+        <a href={paper.url} class="link">{title}</a>: {description}
+      </li>
+    ))}
     <li>
-      <span class="date">[2024.09.01]</span> I served as the Web Chair for <a
-        href="https://pakdd2025.org/"
-        class="link"
-      >
-        PAKDD 2025
-      </a>.
-    </li>
-    <li>
-      <span class="date">[2024.08.13]</span> I designed the logo for <a
-        href="https://conferences.sigcomm.org/sigcomm/2024/"
-        class="link"
-      >
-        SIGCOMM 2024</a
-      >, which garnered significant praise from the community.
-    </li>
-    <li>
-      <span class="date">[2024.05.15]</span> Our work, LiDARSpectra, received <a
-        href="https://ipsn.acm.org/2024/awards.html"
-        class="link"
-      >
-        the Best Paper Runner-Up Award</a
-      > at IPSN 2024.
-    </li>
-    <li>
-      <span class="date">[2024.04.04]</span> My personal website is online.
+      <span class="font-semibold">[2024]</span> Our work, LiDARSpectra, received
+      the <a href="https://ipsn.acm.org/2024/awards.html" class="link">Best Paper Runner-Up Award</a>
+      at IPSN 2024.
     </li>
   </ul>
-</div>
+</section>
