@@ -1,86 +1,64 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import HomeLink from "../components/HomeLink.astro";
-
-const teachingTerms = [
-  { year: "2025", terms: "T1, T2" },
-  { year: "2024", terms: "T1, T2, T3" },
-  { year: "2023", terms: "T3" },
-];
-
-const serviceRoles = [
-  { year: "2025", event: "PAKDD", role: "Web Chair", url: "https://pakdd2025.org/" },
-  { year: "2024", event: "ACM SIGCOMM", role: "Publicity / Web Chair", url: "https://conferences.sigcomm.org/sigcomm/2024/" },
-  { year: "2022", event: "SmartWear Workshop", role: "Web Chair", url: "https://smart-wear.vercel.app/" },
-];
-
-const reviewVenues = ["IMWUT / UbiComp", "TOSN", "PerCom", "IEEE VR", "WWW", "ISMAR"];
 ---
 
 <Layout title="Yanxiang Wang | Teaching and Services">
-  <main class="mx-auto max-w-screen-md my-10 px-4 pb-6 sm:px-6">
-    <HomeLink />
-    <h1 class="text-3xl font-bold tracking-tight sm:text-4xl">Teaching &amp; Services</h1>
-
-    <section class="mt-10" aria-labelledby="teaching-heading">
-      <h2 id="teaching-heading" class="section-heading">Teaching</h2>
-
-      <div class="py-6">
-        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <h3 class="text-xl font-bold">Shandong University</h3>
-          <span class="role-label bg-blue-50 text-blue-800">Lecturer</span>
-        </div>
-        <p class="mt-3 font-semibold">Computer Networks</p>
-        <p class="mt-1 text-gray-600">Spring 2026</p>
-      </div>
-
-      <div class="border-t border-gray-200 py-6">
-        <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
-          <h3 class="text-xl font-bold">University of New South Wales</h3>
-          <span class="role-label bg-gray-100 text-gray-700">Teaching Assistant</span>
-        </div>
-        <p class="mt-3 font-semibold">Computer Networks and Applications</p>
-        <p class="mt-1 text-gray-600">COMP3331 / COMP9331</p>
-        <dl class="mt-4 space-y-2">
-          {teachingTerms.map(({ year, terms }) => (
-            <div class="flex gap-6 text-lg">
-              <dt class="font-semibold">{year}</dt>
-              <dd class="text-gray-600">{terms}</dd>
-            </div>
-          ))}
-        </dl>
-      </div>
-    </section>
-
-    <section class="mt-6" aria-labelledby="services-heading">
-      <h2 id="services-heading" class="section-heading">Academic Service</h2>
-      <h3 class="mt-6 text-xl font-bold">Conference Organization</h3>
-      <ul class="mt-2 divide-y divide-gray-200">
-        {serviceRoles.map(({ year, event, role, url }) => (
-          <li class="flex gap-5 py-4 sm:gap-6">
-            <span class="shrink-0 text-gray-500">{year}</span>
-            <div>
-              <a href={url} class="link">{event}</a>
-              <p class="mt-1 text-gray-600">{role}</p>
-            </div>
-          </li>
-        ))}
+  <div class="mx-auto max-w-screen-md mt-10">
+    <div class="mx-2">
+      <HomeLink />
+      <h1 class="font-bold text-4xl">Teaching and Services</h1>
+      <h2 class="font-bold text-2xl mt-4">Teaching</h2>
+      <h3 class="font-semibold text-lg mt-3">Shandong University — Lecturer</h3>
+      <ul class="list-disc mt-2 ml-6">
+        <li>Computer Networks, Spring 2026</li>
       </ul>
-
-      <h3 class="mt-6 text-xl font-bold">Review Service</h3>
-      <ul class="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 sm:grid-cols-3">
-        {reviewVenues.map((venue) => <li>{venue}</li>)}
+      <h3 class="font-semibold text-lg mt-4">University of New South Wales — Teaching Assistant</h3>
+      <p class="mt-2">COMP3331/9331: Computer Networks and Applications</p>
+      <ul class="list-disc mt-2 ml-6">
+        <li>2025: T1, T2</li>
+        <li>2024: T1, T2, T3</li>
+        <li>2023: T3</li>
       </ul>
-    </section>
-  </main>
+      <h2 class="font-bold text-2xl mt-4">Services</h2>
+      <p class="mt-2 text-lg">
+        <span
+          class="inline-flex items-center rounded-md bg-green-100 px-1 font-medium text-green-700"
+          >Editorial Service</span
+        >:
+      </p>
+      <ul class="list-disc mt-2 ml-6">
+        <li>
+          Web Chair at <a href="https://pakdd2025.org/" class="link"
+            >PAKDD 2025</a
+          >
+        </li>
+        <li>
+          Publicity/Web Chair at <a
+            href="https://conferences.sigcomm.org/sigcomm/2024/"
+            class="link">Sigcomm 2024</a
+          >
+        </li>
+        <li>
+          Web Chair at <a href="https://smart-wear.vercel.app/" class="link"
+            >SmartWear Workshop 2022</a
+          >
+        </li>
+      </ul>
+      <p class="mt-2 text-lg">
+        <span
+          class="inline-flex items-center rounded-md bg-yellow-100 px-1 font-medium text-yellow-700"
+          >Review Service</span
+        >:
+      </p>
+      <ul class="list-disc ml-6 mt-2">
+        <li>IMWUT/UbiComp</li>
+        <li>TOSN</li>
+        <li>PerCom</li>
+        <li>IEEE VR</li>
+        <li>WWW</li>
+        <li>ISMAR</li>
+      </ul>
+    </div>
+  </div>
 </Layout>
-
-<style>
-  .section-heading {
-    @apply border-b border-gray-300 pb-3 text-2xl font-bold;
-  }
-
-  .role-label {
-    @apply w-fit shrink-0 rounded px-2.5 py-1 text-sm font-semibold;
-  }
-</style>
