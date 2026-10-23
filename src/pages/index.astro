@@ -73,46 +73,28 @@ import RecentPaper from "../components/RecentPaper.astro";
         </ul>
       </nav>
 
-      <div class="pt-2">
+      <div class="space-y-3 pt-2">
         <p class="text-lg leading-relaxed">
           I am an Associate Professor at
           <a href="https://www.sdu.edu.cn/" class="link">Shandong University</a>,
           China. My research interests include mobile computing, machine learning,
           and computer vision.
         </p>
+        <p class="text-lg leading-relaxed">
+          Previously, I conducted my doctoral research at the
+          <a href="https://www.unsw.edu.au/" class="link">University of New South Wales</a>
+          (UNSW), Australia, and worked at DATA61-CSIRO. I received my M.Eng from
+          <a href="https://english.hrbeu.edu.cn/" class="link">Harbin Engineering University</a>
+          in 2020 and my B.Sec from
+          <a href="https://www.jlu.edu.cn/" class="link">Jilin University</a>
+          in 2015.
+        </p>
       </div>
       <RecentPaper />
-      <details class="mt-8 border-t border-gray-200 pt-4">
-        <summary class="cursor-pointer text-lg font-bold">Academic background &amp; activities</summary>
-        <div class="pt-3">
-          <p class="text-lg text-justify">
-          Previously, I conducted my doctoral research at the
-          School of Computer Science and Engineering,
-          <a href="https://www.unsw.edu.au/" class="link"
-            >University of New South Wales</a
-          > (UNSW), Australia, under the supervision of Prof.
-          <a href="https://github.com/wenh77/Website/wiki" class="link"
-            >Wen Hu</a
-          >
-          and Prof.
-          <a href="https://www.cse.unsw.edu.au/~mahbub/" class="link"
-            >Mahbub Hassan</a
-          >. I also worked at <a
-            href="https://www.csiro.au/en/research/technology-space"
-            class="link">DATA61-CSIRO</a
-          >. Before joining UNSW, I received my M.Eng degree from <a
-            href="https://english.hrbeu.edu.cn/"
-            class="link"
-            >Harbin Engineering University
-          </a>in China, in 2020. I obtained my B.Sec degree from <a
-            href="https://www.jlu.edu.cn/"
-            class="link">Jilin University</a
-          >, China, in 2015.
-          </p>
-          <News />
-          <Skill />
-        </div>
-      </details>
+      <div class="mt-8 space-y-6 border-t border-gray-200 pt-4">
+        <News />
+        <Skill />
+      </div>
     </div>
     <footer class="text-right mt-4">
       <div class="w-full mx-auto">
